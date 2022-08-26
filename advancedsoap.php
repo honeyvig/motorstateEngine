@@ -20,7 +20,7 @@ class Data {
 }
 
 $db = new Data();
-$query = $db->query("SELECT * FROM INFORMATION_SCHEMA.TABLE");
+$query = $db->query("SELECT * FROM products");
 var_dump(xml2array($query));
 
 $xml = simplexml_load_string($query);
