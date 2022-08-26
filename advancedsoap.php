@@ -20,8 +20,8 @@ class Data {
 }
 
 $db = new Data();
-$query = $db->query("SELECT * FROM products");
-var_dump(xml2array($query));
+$query = $db->query("SELECT  TOP 2 * FROM products");
+var_dump($query);
 
 $xml = simplexml_load_string($query);
 
